@@ -1,0 +1,691 @@
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Title = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local UIGradient = Instance.new("UIGradient")
+local Buttons = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local MainButton = Instance.new("TextButton")
+local ScriptsButton = Instance.new("TextButton")
+local CreditsButton = Instance.new("TextButton")
+local MiscButton = Instance.new("TextButton")
+local MainFrame = Instance.new("Frame")
+local UICorner_4 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+local ScriptsFrame = Instance.new("Frame")
+local UICorner_5 = Instance.new("UICorner")
+local WalkOnWalls = Instance.new("TextButton")
+local InfiniteYield = Instance.new("TextButton")
+local InfJump = Instance.new("TextButton")
+local CMDX = Instance.new("TextButton")
+local NextPage = Instance.new("TextButton")
+local TextLabel_3 = Instance.new("TextLabel")
+local CreditsFrame = Instance.new("Frame")
+local UICorner_6 = Instance.new("UICorner")
+local TextLabel_4 = Instance.new("TextLabel")
+local TextLabel_5 = Instance.new("TextLabel")
+local MiscFrame = Instance.new("Frame")
+local UICorner_7 = Instance.new("UICorner")
+local Walkspeed = Instance.new("TextBox")
+local Jump = Instance.new("TextBox")
+local page2 = Instance.new("Frame")
+local UICorner_8 = Instance.new("UICorner")
+local Bypasser = Instance.new("TextButton")
+local FatesAdmin = Instance.new("TextButton")
+local RevizAdmin = Instance.new("TextButton")
+local FatesAdmin_2 = Instance.new("TextButton")
+local LastPage = Instance.new("TextButton")
+local TextLabel_6 = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.ResetOnSpawn = false
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+Frame.Position = UDim2.new(0.293594301, 0, 0.383012831, 0)
+Frame.Size = UDim2.new(0.373372614, 0, 0.45256415, 0)
+
+UICorner.CornerRadius = UDim.new(0, 4)
+UICorner.Parent = Frame
+
+Title.Name = "Title"
+Title.Parent = Frame
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 0.900
+Title.Position = UDim2.new(-1.51115466e-06, 0, 8.68456951e-08, 0)
+Title.Size = UDim2.new(1.00288892, 0, 0.0697608218, 0)
+
+UICorner_2.CornerRadius = UDim.new(0, 4)
+UICorner_2.Parent = Title
+
+TextLabel.Parent = Title
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderSizePixel = 2
+TextLabel.Position = UDim2.new(-6.56810926e-07, 0, 1.55613307e-05, 0)
+TextLabel.Size = UDim2.new(1, 0, 1, 0)
+TextLabel.Font = Enum.Font.Unknown
+TextLabel.Text = "Dark Matter Menu"
+TextLabel.TextColor3 = Color3.fromRGB(81, 0, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(53, 53, 53)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(143, 16, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0))}
+UIGradient.Rotation = -90
+UIGradient.Parent = Title
+
+Buttons.Name = "Buttons"
+Buttons.Parent = Frame
+Buttons.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+Buttons.BorderSizePixel = 0
+Buttons.Position = UDim2.new(0, 0, 1.7369139e-07, 0)
+Buttons.Size = UDim2.new(0.146978155, 0, 1, 0)
+
+UICorner_3.CornerRadius = UDim.new(0, 4)
+UICorner_3.Parent = Buttons
+
+MainButton.Name = "MainButton"
+MainButton.Parent = Buttons
+MainButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainButton.BackgroundTransparency = 0.900
+MainButton.Position = UDim2.new(0, 0, 0.0682982281, 0)
+MainButton.Size = UDim2.new(0.991361439, 0, 0.100000001, 0)
+MainButton.Font = Enum.Font.SourceSans
+MainButton.Text = "Main"
+MainButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+MainButton.TextScaled = true
+MainButton.TextSize = 14.000
+MainButton.TextWrapped = true
+
+ScriptsButton.Name = "ScriptsButton"
+ScriptsButton.Parent = Buttons
+ScriptsButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScriptsButton.BackgroundTransparency = 0.900
+ScriptsButton.Position = UDim2.new(0, 0, 0.190665901, 0)
+ScriptsButton.Size = UDim2.new(0.991361439, 0, 0.100000001, 0)
+ScriptsButton.Font = Enum.Font.SourceSans
+ScriptsButton.Text = "Scripts"
+ScriptsButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+ScriptsButton.TextScaled = true
+ScriptsButton.TextSize = 14.000
+ScriptsButton.TextWrapped = true
+
+CreditsButton.Name = "CreditsButton"
+CreditsButton.Parent = Buttons
+CreditsButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CreditsButton.BackgroundTransparency = 0.900
+CreditsButton.Position = UDim2.new(0, 0, 0.432555467, 0)
+CreditsButton.Size = UDim2.new(0.991361439, 0, 0.100000001, 0)
+CreditsButton.Font = Enum.Font.SourceSans
+CreditsButton.Text = "Credits"
+CreditsButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+CreditsButton.TextScaled = true
+CreditsButton.TextSize = 14.000
+CreditsButton.TextWrapped = true
+
+MiscButton.Name = "MiscButton"
+MiscButton.Parent = Buttons
+MiscButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MiscButton.BackgroundTransparency = 0.900
+MiscButton.Position = UDim2.new(0, 0, 0.310187817, 0)
+MiscButton.Size = UDim2.new(0.991361439, 0, 0.100000001, 0)
+MiscButton.Font = Enum.Font.SourceSans
+MiscButton.Text = "Misc"
+MiscButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+MiscButton.TextScaled = true
+MiscButton.TextSize = 14.000
+MiscButton.TextWrapped = true
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = Frame
+MainFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainFrame.BackgroundTransparency = 0.900
+MainFrame.Position = UDim2.new(0.148552552, 0, 0.0882186815, 0)
+MainFrame.Size = UDim2.new(0.850380838, 0, 0.908195853, 0)
+MainFrame.Visible = false
+
+UICorner_4.CornerRadius = UDim.new(0, 4)
+UICorner_4.Parent = MainFrame
+
+TextLabel_2.Parent = MainFrame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 0.900
+TextLabel_2.Position = UDim2.new(0.212016165, 0, 0.294541597, 0)
+TextLabel_2.Size = UDim2.new(0.574796855, 0, 0.316206068, 0)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "Thank you for using Dark Matter Menu. It really means alot to me!"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+ScriptsFrame.Name = "ScriptsFrame"
+ScriptsFrame.Parent = Frame
+ScriptsFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScriptsFrame.BackgroundTransparency = 0.900
+ScriptsFrame.Position = UDim2.new(0.148552552, 0, 0.0882186815, 0)
+ScriptsFrame.Size = UDim2.new(0.850380838, 0, 0.908195853, 0)
+ScriptsFrame.Visible = false
+
+UICorner_5.CornerRadius = UDim.new(0, 4)
+UICorner_5.Parent = ScriptsFrame
+
+WalkOnWalls.Name = "WalkOnWalls"
+WalkOnWalls.Parent = ScriptsFrame
+WalkOnWalls.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WalkOnWalls.BackgroundTransparency = 0.900
+WalkOnWalls.BorderColor3 = Color3.fromRGB(27, 42, 53)
+WalkOnWalls.Position = UDim2.new(0.0766350329, 0, 0.109172642, 0)
+WalkOnWalls.Size = UDim2.new(0.299999028, 0, 0.15458633, 0)
+WalkOnWalls.Font = Enum.Font.SourceSans
+WalkOnWalls.Text = "WalkOnWalls"
+WalkOnWalls.TextColor3 = Color3.fromRGB(0, 0, 0)
+WalkOnWalls.TextSize = 14.000
+
+InfiniteYield.Name = "InfiniteYield"
+InfiniteYield.Parent = ScriptsFrame
+InfiniteYield.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+InfiniteYield.BackgroundTransparency = 0.900
+InfiniteYield.BorderColor3 = Color3.fromRGB(27, 42, 53)
+InfiniteYield.Position = UDim2.new(0.609042883, 0, 0.109172642, 0)
+InfiniteYield.Size = UDim2.new(0.299999028, 0, 0.15458633, 0)
+InfiniteYield.Font = Enum.Font.SourceSans
+InfiniteYield.Text = "Inf Yield"
+InfiniteYield.TextColor3 = Color3.fromRGB(0, 0, 0)
+InfiniteYield.TextSize = 14.000
+
+InfJump.Name = "InfJump"
+InfJump.Parent = ScriptsFrame
+InfJump.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+InfJump.BackgroundTransparency = 0.900
+InfJump.BorderColor3 = Color3.fromRGB(27, 42, 53)
+InfJump.Position = UDim2.new(0.609042883, 0, 0.487377852, 0)
+InfJump.Size = UDim2.new(0.299999028, 0, 0.15458633, 0)
+InfJump.Font = Enum.Font.SourceSans
+InfJump.Text = "Inf Jump"
+InfJump.TextColor3 = Color3.fromRGB(0, 0, 0)
+InfJump.TextSize = 14.000
+
+CMDX.Name = "CMD-X"
+CMDX.Parent = ScriptsFrame
+CMDX.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CMDX.BackgroundTransparency = 0.900
+CMDX.BorderColor3 = Color3.fromRGB(27, 42, 53)
+CMDX.Position = UDim2.new(0.0766350329, 0, 0.487377852, 0)
+CMDX.Size = UDim2.new(0.299999028, 0, 0.15458633, 0)
+CMDX.Font = Enum.Font.SourceSans
+CMDX.Text = "CMD-X"
+CMDX.TextColor3 = Color3.fromRGB(0, 0, 0)
+CMDX.TextSize = 14.000
+
+NextPage.Name = "NextPage"
+NextPage.Parent = ScriptsFrame
+NextPage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NextPage.BackgroundTransparency = 0.900
+NextPage.Position = UDim2.new(0.608787, 0, 0.779804587, 0)
+NextPage.Size = UDim2.new(0.100000001, 0, 0.100000001, 0)
+NextPage.Font = Enum.Font.SourceSans
+NextPage.Text = ">"
+NextPage.TextColor3 = Color3.fromRGB(0, 0, 0)
+NextPage.TextScaled = true
+NextPage.TextSize = 14.000
+NextPage.TextWrapped = true
+
+TextLabel_3.Parent = ScriptsFrame
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 0.900
+TextLabel_3.Position = UDim2.new(0.449289292, 0, 0.779804587, 0)
+TextLabel_3.Size = UDim2.new(0.100000001, 0, 0.100000001, 0)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "1/2"
+TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+CreditsFrame.Name = "CreditsFrame"
+CreditsFrame.Parent = Frame
+CreditsFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CreditsFrame.BackgroundTransparency = 0.900
+CreditsFrame.Position = UDim2.new(0.148552552, 0, 0.0882186815, 0)
+CreditsFrame.Size = UDim2.new(0.850380838, 0, 0.908195853, 0)
+CreditsFrame.Visible = false
+
+UICorner_6.CornerRadius = UDim.new(0, 4)
+UICorner_6.Parent = CreditsFrame
+
+TextLabel_4.Parent = CreditsFrame
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(-4.55649456e-07, 0, 0, 0)
+TextLabel_4.Size = UDim2.new(0.99584341, 0, 0.100000001, 0)
+TextLabel_4.Font = Enum.Font.SourceSans
+TextLabel_4.Text = "Roblox: TheGodOfDarkMatter"
+TextLabel_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
+
+TextLabel_5.Parent = CreditsFrame
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.Position = UDim2.new(-0.00447967183, 0, 0.112803139, 0)
+TextLabel_5.Size = UDim2.new(0.99584341, 0, 0.100000001, 0)
+TextLabel_5.Font = Enum.Font.SourceSans
+TextLabel_5.Text = "Discord: snas#6249"
+TextLabel_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_5.TextScaled = true
+TextLabel_5.TextSize = 14.000
+TextLabel_5.TextWrapped = true
+
+MiscFrame.Name = "MiscFrame"
+MiscFrame.Parent = Frame
+MiscFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MiscFrame.BackgroundTransparency = 0.900
+MiscFrame.Position = UDim2.new(0.148552552, 0, 0.0882186815, 0)
+MiscFrame.Size = UDim2.new(0.850380838, 0, 0.908195853, 0)
+
+UICorner_7.CornerRadius = UDim.new(0, 4)
+UICorner_7.Parent = MiscFrame
+
+Walkspeed.Name = "Walkspeed"
+Walkspeed.Parent = MiscFrame
+Walkspeed.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Walkspeed.BackgroundTransparency = 0.900
+Walkspeed.Position = UDim2.new(0.119445771, 0, 0.253807068, 0)
+Walkspeed.Size = UDim2.new(0.180625916, 0, 0.100000001, 0)
+Walkspeed.Font = Enum.Font.SourceSans
+Walkspeed.PlaceholderText = "Walkspeed"
+Walkspeed.Text = ""
+Walkspeed.TextColor3 = Color3.fromRGB(0, 0, 0)
+Walkspeed.TextScaled = true
+Walkspeed.TextSize = 14.000
+Walkspeed.TextWrapped = true
+
+Jump.Name = "Jump"
+Jump.Parent = MiscFrame
+Jump.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Jump.BackgroundTransparency = 0.900
+Jump.Position = UDim2.new(0.699028969, 0, 0.253807068, 0)
+Jump.Size = UDim2.new(0.180625916, 0, 0.100000001, 0)
+Jump.Font = Enum.Font.SourceSans
+Jump.PlaceholderText = "JumpPower/Height"
+Jump.Text = ""
+Jump.TextColor3 = Color3.fromRGB(0, 0, 0)
+Jump.TextScaled = true
+Jump.TextSize = 14.000
+Jump.TextWrapped = true
+
+page2.Name = "page2"
+page2.Parent = Frame
+page2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+page2.BackgroundTransparency = 0.900
+page2.Position = UDim2.new(0.148552552, 0, 0.0882186815, 0)
+page2.Size = UDim2.new(0.850380838, 0, 0.908195853, 0)
+page2.Visible = false
+
+UICorner_8.CornerRadius = UDim.new(0, 4)
+UICorner_8.Parent = page2
+
+Bypasser.Name = "Bypasser"
+Bypasser.Parent = page2
+Bypasser.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Bypasser.BackgroundTransparency = 0.900
+Bypasser.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Bypasser.Position = UDim2.new(0.0766350329, 0, 0.109172642, 0)
+Bypasser.Size = UDim2.new(0.299999028, 0, 0.15458633, 0)
+Bypasser.Font = Enum.Font.SourceSans
+Bypasser.Text = "Bypasser"
+Bypasser.TextColor3 = Color3.fromRGB(0, 0, 0)
+Bypasser.TextSize = 14.000
+
+FatesAdmin.Name = "FatesAdmin"
+FatesAdmin.Parent = page2
+FatesAdmin.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FatesAdmin.BackgroundTransparency = 0.900
+FatesAdmin.BorderColor3 = Color3.fromRGB(27, 42, 53)
+FatesAdmin.Position = UDim2.new(0.609042883, 0, 0.109172642, 0)
+FatesAdmin.Size = UDim2.new(0.299999028, 0, 0.15458633, 0)
+FatesAdmin.Font = Enum.Font.SourceSans
+FatesAdmin.Text = "Fates Admin"
+FatesAdmin.TextColor3 = Color3.fromRGB(0, 0, 0)
+FatesAdmin.TextSize = 14.000
+
+RevizAdmin.Name = "RevizAdmin"
+RevizAdmin.Parent = page2
+RevizAdmin.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RevizAdmin.BackgroundTransparency = 0.900
+RevizAdmin.BorderColor3 = Color3.fromRGB(27, 42, 53)
+RevizAdmin.Position = UDim2.new(0.609042883, 0, 0.487377852, 0)
+RevizAdmin.Size = UDim2.new(0.299999028, 0, 0.15458633, 0)
+RevizAdmin.Font = Enum.Font.SourceSans
+RevizAdmin.Text = "Reviz Admin [VERY DETECTABLE]"
+RevizAdmin.TextColor3 = Color3.fromRGB(0, 0, 0)
+RevizAdmin.TextScaled = true
+RevizAdmin.TextSize = 14.000
+RevizAdmin.TextWrapped = true
+
+FatesAdmin_2.Name = "FatesAdmin"
+FatesAdmin_2.Parent = page2
+FatesAdmin_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FatesAdmin_2.BackgroundTransparency = 0.900
+FatesAdmin_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+FatesAdmin_2.Position = UDim2.new(0.0766350329, 0, 0.487377852, 0)
+FatesAdmin_2.Size = UDim2.new(0.299999028, 0, 0.15458633, 0)
+FatesAdmin_2.Font = Enum.Font.SourceSans
+FatesAdmin_2.Text = "Fates Admin"
+FatesAdmin_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+FatesAdmin_2.TextSize = 14.000
+
+LastPage.Name = "LastPage"
+LastPage.Parent = page2
+LastPage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LastPage.BackgroundTransparency = 0.900
+LastPage.Position = UDim2.new(0.276312917, 0, 0.779804587, 0)
+LastPage.Size = UDim2.new(0.100000001, 0, 0.100000001, 0)
+LastPage.Font = Enum.Font.SourceSans
+LastPage.Text = "<"
+LastPage.TextColor3 = Color3.fromRGB(0, 0, 0)
+LastPage.TextScaled = true
+LastPage.TextSize = 14.000
+LastPage.TextWrapped = true
+
+TextLabel_6.Parent = page2
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 0.900
+TextLabel_6.Position = UDim2.new(0.449289292, 0, 0.779804587, 0)
+TextLabel_6.Size = UDim2.new(0.100000001, 0, 0.100000001, 0)
+TextLabel_6.Font = Enum.Font.SourceSans
+TextLabel_6.Text = "2/2"
+TextLabel_6.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_6.TextScaled = true
+TextLabel_6.TextSize = 14.000
+TextLabel_6.TextWrapped = true
+
+-- Scripts:
+
+local function GSSF_fake_script() -- Title.Drag 
+	local script = Instance.new('LocalScript', Title)
+
+	local UserInputService = game:GetService("UserInputService")
+	local runService = (game:GetService("RunService"));
+	
+	local gui = script.Parent.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	function Lerp(a, b, m)
+		return a + (b - a) * m
+	end;
+	
+	local lastMousePos
+	local lastGoalPos
+	local DRAG_SPEED = (8); -- // The speed of the UI darg.
+	function Update(dt)
+		if not (startPos) then return end;
+		if not (dragging) and (lastGoalPos) then
+			gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, lastGoalPos.X.Offset, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, lastGoalPos.Y.Offset, dt * DRAG_SPEED))
+			return 
+		end;
+	
+		local delta = (lastMousePos - UserInputService:GetMouseLocation())
+		local xGoal = (startPos.X.Offset - delta.X);
+		local yGoal = (startPos.Y.Offset - delta.Y);
+		lastGoalPos = UDim2.new(startPos.X.Scale, xGoal, startPos.Y.Scale, yGoal)
+		gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, xGoal, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, yGoal, dt * DRAG_SPEED))
+	end;
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			lastMousePos = UserInputService:GetMouseLocation()
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	runService.Heartbeat:Connect(Update)
+end
+coroutine.wrap(GSSF_fake_script)()
+local function ULYRW_fake_script() -- MainButton.LocalScript 
+	local script = Instance.new('LocalScript', MainButton)
+
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.Rotation = 5 -- change this however you want 
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.Rotation = 0
+	end)
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.MiscFrame.Visible = false
+		script.Parent.Parent.Parent.ScriptsFrame.Visible = false
+		script.Parent.Parent.Parent.MainFrame.Visible = false
+		script.Parent.Parent.Parent.CreditsFrame.Visible = false
+		script.Parent.Parent.Parent.page2.Visible = false
+		script.Parent.Parent.Parent.MainFrame.Visible = true
+	end)
+end
+coroutine.wrap(ULYRW_fake_script)()
+local function WDCBI_fake_script() -- ScriptsButton.LocalScript 
+	local script = Instance.new('LocalScript', ScriptsButton)
+
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.Rotation = 5 -- change this however you want 
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.Rotation = 0
+	end)
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.MiscFrame.Visible = false
+		script.Parent.Parent.Parent.ScriptsFrame.Visible = false
+		script.Parent.Parent.Parent.MainFrame.Visible = false
+		script.Parent.Parent.Parent.CreditsFrame.Visible = false
+		if script.Parent.Parent.Parent.page2.Visible == false then
+			script.Parent.Parent.Parent.ScriptsFrame.Visible = true
+		end
+	end)
+end
+coroutine.wrap(WDCBI_fake_script)()
+local function DJDJD_fake_script() -- CreditsButton.LocalScript 
+	local script = Instance.new('LocalScript', CreditsButton)
+
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.Rotation = 5 -- change this however you want 
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.Rotation = 0
+	end)
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.MiscFrame.Visible = false
+		script.Parent.Parent.Parent.ScriptsFrame.Visible = false
+		script.Parent.Parent.Parent.MainFrame.Visible = false
+		script.Parent.Parent.Parent.CreditsFrame.Visible = false
+		script.Parent.Parent.Parent.page2.Visible = false
+		script.Parent.Parent.Parent.CreditsFrame.Visible = true
+	end)
+end
+coroutine.wrap(DJDJD_fake_script)()
+local function QBBULYF_fake_script() -- MiscButton.LocalScript 
+	local script = Instance.new('LocalScript', MiscButton)
+
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.Rotation = 5 -- change this however you want
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.Rotation = 0
+	end)
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.MiscFrame.Visible = false
+		script.Parent.Parent.Parent.ScriptsFrame.Visible = false
+		script.Parent.Parent.Parent.MainFrame.Visible = false
+		script.Parent.Parent.Parent.CreditsFrame.Visible = false
+		script.Parent.Parent.Parent.page2.Visible = false
+		script.Parent.Parent.Parent.MiscFrame.Visible = true
+	end)
+end
+coroutine.wrap(QBBULYF_fake_script)()
+local function SMTPJ_fake_script() -- WalkOnWalls.LocalScript 
+	local script = Instance.new('LocalScript', WalkOnWalls)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		
+		loadstring(game:HttpGet(("https://pastebin.com/raw/DBLt40PM"),true))()
+		
+	end)
+end
+coroutine.wrap(SMTPJ_fake_script)()
+local function ULSNHOJ_fake_script() -- InfiniteYield.LocalScript 
+	local script = Instance.new('LocalScript', InfiniteYield)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+	
+		
+	end)
+end
+coroutine.wrap(ULSNHOJ_fake_script)()
+local function ZSVK_fake_script() -- InfJump.LocalScript 
+	local script = Instance.new('LocalScript', InfJump)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		
+		loadstring(game:HttpGet('https://pastebin.com/raw/3ceHVPL1'))()
+	
+		
+	end)
+end
+coroutine.wrap(ZSVK_fake_script)()
+local function JIIN_fake_script() -- CMDX.LocalScript 
+	local script = Instance.new('LocalScript', CMDX)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
+		
+	end)
+end
+coroutine.wrap(JIIN_fake_script)()
+local function ZVYIXU_fake_script() -- NextPage.LocalScript 
+	local script = Instance.new('LocalScript', NextPage)
+
+	
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.page2.Visible = true
+		script.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(ZVYIXU_fake_script)()
+local function EAZCYEK_fake_script() -- Walkspeed.LocalScript 
+	local script = Instance.new('LocalScript', Walkspeed)
+
+	script.Parent.FocusLost:Connect(function(enter, input)
+		if not enter then return end
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = script.Parent.Text
+	end)
+end
+coroutine.wrap(EAZCYEK_fake_script)()
+local function VQLT_fake_script() -- Jump.LocalScript 
+	local script = Instance.new('LocalScript', Jump)
+
+	script.Parent.FocusLost:Connect(function(enter, input)
+		if not enter then return end
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = script.Parent.Text
+		game.Players.LocalPlayer.Character.Humanoid.JumpHeight = script.Parent.Text
+	end)
+end
+coroutine.wrap(VQLT_fake_script)()
+local function JKSIU_fake_script() -- Bypasser.LocalScript 
+	local script = Instance.new('LocalScript', Bypasser)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		
+		loadstring(game:HttpGet(("https://pastebin.com/raw/5dw519k1"),true))()
+		
+	end)
+end
+coroutine.wrap(JKSIU_fake_script)()
+local function VHTHYC_fake_script() -- FatesAdmin.LocalScript 
+	local script = Instance.new('LocalScript', FatesAdmin)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))()
+	
+	
+		
+	end)
+end
+coroutine.wrap(VHTHYC_fake_script)()
+local function ZTNAUBK_fake_script() -- RevizAdmin.LocalScript 
+	local script = Instance.new('LocalScript', RevizAdmin)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		
+		loadstring(game:HttpGet('https://pastebin.com/raw/A2R7TdJV'))()
+	
+		
+	end)
+end
+coroutine.wrap(ZTNAUBK_fake_script)()
+local function MVOA_fake_script() -- FatesAdmin_2.LocalScript 
+	local script = Instance.new('LocalScript', FatesAdmin_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))();
+		
+	end)
+end
+coroutine.wrap(MVOA_fake_script)()
+local function IIUJB_fake_script() -- LastPage.LocalScript 
+	local script = Instance.new('LocalScript', LastPage)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+		script.Parent.Parent.Parent.ScriptsFrame.Visible = true
+	end)
+end
+coroutine.wrap(IIUJB_fake_script)()
+local function OZDSXU_fake_script() -- ScreenGui.Master 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+		game.StarterGui:SetCore("SendNotification", {
+		Title = "Thanks!";
+		Text = "Thank you for using DM Menu VERSION: 0.7";
+		Button1 = ":D";
+		Button2 = "You're welcome!"
+	})
+end
+coroutine.wrap(OZDSXU_fake_script)()
