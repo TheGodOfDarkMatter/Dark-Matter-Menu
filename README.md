@@ -12,7 +12,7 @@ SIDE NOTE: DO NOT USE WEAREDEVS TO DOWNLOAD ANY OF THE EXECUTORS, YOU MAY GET A 
 
 FREE:
 KRNL (Gives alot of spam in email but it works just fine)
-Electron (MAY BE A TROJAN I'D RECOMMEND AGAINST USING THIS)
+Electron (MAY BE A TROJAN I'D ADVISE AGAINST USING THIS)
 Oxygen U (Insanely good for a free executor, no spam, no virus and it comes with scripts built-in.)
 Fluxus (Good alternative to Synapse X, same as Oxygen U)
 
