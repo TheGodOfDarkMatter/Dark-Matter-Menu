@@ -6,6 +6,7 @@ Dark Matter Menu is a Roblox exploit menu created by one person, me.
 In order to use this, you will require a roblox executor and, of course, a roblox account (I'd recommend using an alt to avoid getting your main banned).  
 simply paste the code from main into your executor of choice and click execute or run or whatever it says.  
   
+  NOTE: VERSION 0.8 AND ABOVE WILL BE OBFUSCATED! VERSION 0.7 WILL BE AVAILABLE IN "MAIN 0.7" WHEN 0.8 RELEASES
   
 # Executors  
 SIDE NOTE: DO NOT USE WEAREDEVS TO DOWNLOAD ANY OF THE EXECUTORS, YOU MAY GET A VIRUS.  
